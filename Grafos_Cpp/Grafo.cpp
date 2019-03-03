@@ -1,6 +1,28 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+#include "Grafo.h"
+
+void Grafo::Initialize(){
+    h = NULL;
+}
+
+bool Grafo::isEmpty(){
+    if(h == NULL){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+int Grafo::Size(){
+    int count = 0;
+    Vertice *auxiliar;
+    auxiliar = h;
+    while(auxiliar != NULL){
+        count++;
+        auxiliar = auxiliar ->sig;
+    }
+    
+    return count;
+    
+}
 
