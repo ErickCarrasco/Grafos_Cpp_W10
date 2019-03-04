@@ -28,6 +28,10 @@ class Grafo{
         void Initialize();
         bool isEmpty();
         int Size();
+        Vertice *getVertice(string nombre);
+        void InsertArista(Vertice *origen, Vertice *destino, int peso);
+        void InsertVertice(string nombre);
+        void ListAdyacentes();
         
 };
 
